@@ -1,0 +1,219 @@
+/* src/Components/Sobrenosotros/SobreNosotros.css */
+
+/* Animaciones personalizadas */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Estilo general ===== */
+.sobre-nosotros-container {
+  font-family: 'Inter', sans-serif;
+  background-color: #1d2428;
+  color: #ffffff;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+  position: relative;
+  background-image: linear-gradient(rgba(29, 36, 40, 0.8), rgba(29, 36, 40, 0.8)), 
+    url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #e6b77d;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  max-width: 48rem;
+  margin: 0 auto;
+  color: #d1d5db;
+}
+
+/* ===== Misión y Visión ===== */
+.mission-vision-section {
+  padding: 4rem 1.5rem;
+  background-color: #2a333a;
+}
+
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: rgba(67, 85, 113, 0.95);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #e6b77d;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #e5e7eb;
+}
+
+/* ===== Galería ===== */
+.gallery-section {
+  background: #1d2428;
+  padding: 4rem 1.5rem;
+}
+
+.gallery-section h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #e6b77d;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 16rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Equipo ===== */
+.team-section {
+  padding: 4rem 1.5rem;
+  background-color: #2a333a;
+}
+
+.team-section h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #e6b77d;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  background: rgba(67, 85, 113, 0.95);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: scale(1.03);
+}
+
+.team-card img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+  border: 3px solid #e6b77d;
+}
+
+.team-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.team-card p {
+  color: #d1d5db;
+}
+
+/* ===== Google Maps ===== */
+.map-section {
+  padding: 4rem 1.5rem;
+  background: #1d2428;
+}
+
+.map-section h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #e6b77d;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.map-container {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 28rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* ===== Responsivo ===== */
+@media (min-width: 768px) {
+  .mission-vision-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .hero-section {
+    padding: 6rem 1.5rem;
+  }
+  .hero-section h1 {
+    font-size: 3.75rem;
+  }
+  .hero-section p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+

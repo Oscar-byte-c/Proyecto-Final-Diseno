@@ -1,0 +1,115 @@
+/* ====== Contenedor principal ====== */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: rgba(29, 36, 40, 0.85);
+  color: #fff;
+}
+
+/* ====== Título ====== */
+.welcome-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e6b77d;
+  margin-bottom: 2rem;
+  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ====== Contenedor del formulario ====== */
+.contact-form-container {
+  background-color: rgba(67, 85, 113, 0.95);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 500px;
+  animation: fadeIn .5s ease-out;
+}
+
+/* ====== Título del formulario ====== */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: #e6b77d;
+  margin-bottom: 1.5rem;
+}
+
+/* ====== Inputs ====== */
+.auth-input {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 2px solid #98aed3;
+  border-radius: 6px;
+  background-color: #1d2428;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #8f5f3f;
+  box-shadow: 0 0 8px rgba(143, 95, 63, 0.6);
+}
+
+/* ====== Botón ====== */
+.auth-button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: #8f5f3f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.auth-button:hover {
+  background-color: #a6704f;
+  transform: translateY(-1px);
+}
+
+/* ====== Mensaje de éxito ====== */
+.auth-success {
+  background-color: rgba(76, 175, 80, 0.2);
+  border: 1px solid #4caf50;
+  padding: 0.8rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: #4caf50;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ====== Fecha ====== */
+.contact-date {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+}
+
+/* ====== Footer ====== */
+.footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  background-color: rgba(29, 36, 40, 0.95);
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* ====== Animación ====== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
